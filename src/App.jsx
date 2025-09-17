@@ -1,13 +1,18 @@
 
 import { useState } from 'react'
 
+import Navc from './components/Navc';
+import Headerc from './components/Headerc';
+import Footerc from './components/Footerc';
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     Hello, World!
-     This is my first react app
+      <Navc />
+      <Headerc />
+      <Footerc />
     </>
   )
 }
