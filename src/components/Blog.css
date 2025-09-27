@@ -1,0 +1,12 @@
+.blog-container {
+  padding: 20px;
+  background: #f8f9fa;
+}
+
+.blog-row {
+  margin-top: 20px;
+}
+
+.blog-col {
+  margin-bottom: 20px;
+}
