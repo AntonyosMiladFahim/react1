@@ -17,7 +17,7 @@ import Homedashboard from './components/dashboard/Homedashboard';
 import Usersdashboard from './components/dashboard/Usersdashboard';
 import Postsdashboard from './components/dashboard/Postsdashboard';
 import Protectedroute from './components/Protectedroute';
-import Layout from './components/dashboard/Layout';
+import Layout from './components/dashboard';
 
 
 function App() {
