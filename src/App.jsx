@@ -9,17 +9,15 @@ import Hcomponent from './components/Hcomponent';
 import Login from './components/Login';
 import Blog from './components/Blog';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Route } from 'react-router';
-import { Routes } from 'react-router';
+import { Route, Routes } from 'react-router-dom';
 import Singleblog from './components/Singleblog';
 import Singlepost from './components/Singlepost';
 import Errorpage from './components/Errorpage';
-import Dashboard from './../node_modules/react-router/dist/development/index.d';
-import Homedashboard from './components/Dashboard/Homedashboard';
-import Usersdashboard from './components/Dashboard/Usersdashboard';
-import Postsdashboard from './components/Dashboard/Postsdashboard';
+import Homedashboard from './components/dashboard/Homedashboard';
+import Usersdashboard from './components/dashboard/Usersdashboard';
+import Postsdashboard from './components/dashboard/Postsdashboard';
 import Protectedroute from './components/Protectedroute';
-import Layout from './components/Dashboard/Layout';
+import Layout from './components/dashboard/Layout';
 
 
 function App() {
@@ -39,7 +37,7 @@ function App() {
         <Route path="/posts" element={<Blog/>}/>
         <Route path="/posts/:id" element={<Singlepost/>}/>
         <Route path="/dashboard" element={<Protectedroute><Layout/></Protectedroute>} >
-        <Route path="/" element={<Homedashboard />} />
+          <Route index element={<Homedashboard />} />
           <Route path="users" element={<Usersdashboard />} />
           <Route path="posts" element={<Postsdashboard />} />
         </Route>

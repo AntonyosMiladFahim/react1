@@ -1,11 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-bootstrap'
-import { Outlet } from 'react-router'
+import { NavLink } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
 function Layout() {
   return (
     <main className='row'>
- <aside className='col-md-4  bg-secondary' >
+ <aside className='col-md-4  bg-secondary vh-100'  >
     <ul>
         <li>
             <NavLink to="/dashboard">Dashboard home</NavLink >

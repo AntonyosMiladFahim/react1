@@ -9,8 +9,15 @@ function Login() {
         e.preventDefault();
         console.log(ref1.current.value);
         console.log(ref2.current.value);
+      localStorage.setItem("user",JSON.stringify({
+        username:ref1.current.value,
+        password:ref2.current.value,
+        role:"admin"
+        
+      }));
 
     }
+    
   return (
     <div>
       <form action="" onSubmit={handleLogin}>
