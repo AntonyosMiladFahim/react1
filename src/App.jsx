@@ -12,6 +12,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Route } from 'react-router';
 import { Routes } from 'react-router';
 import Singleblog from './components/Singleblog';
+import Singlepost from './components/Singlepost';
+
 
 function App() {
   const [counter, setCount] = useState(0)
@@ -28,7 +30,7 @@ function App() {
         <Route path="/" element={<Blog/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/posts" element={<Blog/>}/>
-        <Route path="/posts/id" element={<Singleblog/>}/>
+        <Route path="/posts/:id" element={<Singlepost/>}/>
       </Routes>
 
       {/* <Blog/> */}

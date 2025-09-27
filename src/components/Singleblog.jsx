@@ -13,7 +13,7 @@ function Singleblog(props) {
      <Card className='single-blog' >
       <Card.Body>
         <Card.Title>
-          <NavLink to={/blog/ + props.id}>
+          <NavLink to={/posts/ + props.id}>
           <h2>
             {props.title}
           </h2>
