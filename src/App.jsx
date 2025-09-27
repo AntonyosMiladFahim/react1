@@ -9,6 +9,9 @@ import Hcomponent from './components/Hcomponent';
 import Login from './components/Login';
 import Blog from './components/Blog';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Route } from 'react-router';
+import { Routes } from 'react-router';
+import Singleblog from './components/Singleblog';
 
 function App() {
   const [counter, setCount] = useState(0)
@@ -21,7 +24,14 @@ function App() {
       <Hcomponent/>
       <Login/>
       <Footerc /> */}
-      <Blog/>
+      <Routes>
+        <Route path="/" element={<Blog/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/posts" element={<Blog/>}/>
+        <Route path="/posts/id" element={<Singleblog/>}/>
+      </Routes>
+
+      {/* <Blog/> */}
     </>
   )
 }
