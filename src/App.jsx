@@ -13,11 +13,11 @@ import { Route, Routes } from 'react-router-dom';
 import Singleblog from './components/Singleblog';
 import Singlepost from './components/Singlepost';
 import Errorpage from './components/Errorpage';
-import Homedashboard from './components/dashboard/Homedashboard'; 
-import Postsdashboard from './components/dashboard/Postsdashboard';
+import Homedashboard from './components/Dashboard/Homedashboard'; 
+import Postsdashboard from './components/Dashboard/Postsdashboard';
 import Protectedroute from './components/Protectedroute';
-import Layout from './components/dashboard/Layout';
-import Usersdashboard from './components/dashboard/Usersdashboard';
+import Layout from './components/Dashboard/Layout';
+import Usersdashboard from './components/Dashboard/Usersdashboard';
 
 function App() {
   const [counter, setCount] = useState(0)
